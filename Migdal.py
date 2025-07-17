@@ -228,8 +228,8 @@ class Migdal:
             return False
 
         if inclusive:
-            if (e_threshold is None or e_threshold < 0.5):
-                print('migdal::load_probabilities: e_threshold must be at least 0.5 keV for semi-inclusive probabilities.')
+            if (e_threshold is None or e_threshold < 0.56):
+                print('migdal::load_probabilities: e_threshold must be at least 0.56 keV for semi-inclusive probabilities.')
                 return False
             double = False
 
@@ -304,8 +304,8 @@ class Migdal:
             return False
 
         if inclusive:
-            if (e_threshold is None or e_threshold < 0.5):
-                print('total_load_probabilities: e_threshold must be at least 0.5 keV for semi-inclusive probabilities.')
+            if (e_threshold is None or e_threshold < 0.56):
+                print('total_load_probabilities: e_threshold must be at least 0.56 keV for semi-inclusive probabilities.')
                 return False
             excitations = False
             double = False
